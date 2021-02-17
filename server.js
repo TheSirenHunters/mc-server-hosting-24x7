@@ -13,7 +13,7 @@ setInterval(() => {
 
 var shell = require('shelljs');
   
-shell.exec('nohup java -Xmx1024M -Xms1024M -jar server.jar nogui')
+shell.exec('java -Xmx1024M -Xms1024M -jar server.jar nogui')
 
 //Use nohup java -Xmx1024M -Xms1024M -jar server.jar nogui & for hosting with no interface. 
 //Use nohup java -Xmx1024M -Xms1024M -jar server.jar for hosting with GUI. Can have errors and can make the server slower compared to "nogui".
